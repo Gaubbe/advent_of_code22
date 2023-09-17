@@ -7,4 +7,6 @@ RUN adduser nasm
 WORKDIR /home/nasm
 USER nasm
 
+COPY --chown=nasm:nasm . .
+
 ENTRYPOINT [ "bash" ]
